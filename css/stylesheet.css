@@ -1,0 +1,20 @@
+﻿body {
+    margin: 3em;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+}
+
+pre{
+    background-color:black;
+}
+
+#about {
+    border: 2px solid black;
+    box-shadow: 0.5em 0.5em 2px gray;
+    position: fixed;
+    padding: 1em;
+    width:16em;
+    margin:0.7em;
+    font-family: 'Inconsolata', monospace;
+}
