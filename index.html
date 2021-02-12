@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
     <!--scripts-->
     <script src="prism.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="js/scripts.js"></script>
     <!--fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
@@ -26,9 +28,44 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
+
 <body>
     <div class="container-fluid">
+        <!--header-->
+        <div class="row">
+            <div class="col-sm-12 row-no-gutters">
+                <header>
+                    <link rel="preconnect" href="https://fonts.gstatic.com">
+                    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+                    <link rel="stylesheet" href="css/header-styles.css" />
+                    <script src="js/nav-scripts.js"></script>
+                    <section>
+                        <!--navigation bar-->
+                        <nav class="navbar navbar-expand-md navbar-custom navbar-dark">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <!-- Navbar links -->
+                            <div class="collapse navbar-collapse row" id="navbar">
+                                <ul class="navbar-nav nav-custom mx-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" onclick="revealBlog()">Blog</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" onclick="revealEdu()">Education</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </section>
+                </header>
+            </div>
+        </div>
+
+        <!--content-->
         <div id="content">
+            <!--sidebar with 'about'-->
             <div class="row">
                 <div class="col-sm-4">
                     <div id="about">
@@ -44,13 +81,54 @@
                 </div>
 
                 <div id="col-sm-8">
+                    <!--main content-->
                     <aside>
+                        <!--section 1: blog posts-->
                         <div id="blog">
                             <article>
                                 <h2>Post 1</h2>
                                 <time datetime="2021-02-11">2 February 2021</time>
                                 <p>Flexbox is the most modern way to center things on the page, and makes designing responsive layouts much easier than it used to be. However, it's not fully supported in some legacy browsers like Internet Explorer.</p>
                             </article>
+
+                            <article>
+                                <h2>Post 2</h2>
+                                <time datetime="2021-02-11">2 February 2021</time>
+                                <p>Flexbox is the most modern way to center things on the page, and makes designing responsive layouts much easier than it used to be. However, it's not fully supported in some legacy browsers like Internet Explorer.</p>
+                            </article>
+
+                            <article>
+                                <h2>Post 2</h2>
+                                <time datetime="2021-02-11">2 February 2021</time>
+                                <p>Flexbox is the most modern way to center things on the page, and makes designing responsive layouts much easier than it used to be. However, it's not fully supported in some legacy browsers like Internet Explorer.</p>
+                            </article>
+
+                            <article>
+                                <h2>Post 2</h2>
+                                <time datetime="2021-02-11">2 February 2021</time>
+                                <p>Flexbox is the most modern way to center things on the page, and makes designing responsive layouts much easier than it used to be. However, it's not fully supported in some legacy browsers like Internet Explorer.</p>
+                            </article>
+                        </div>
+
+                        <!--section 2: education-->
+                        <div id="education" onload="display()">
+                            <!--accordions for education levels-->
+                            <!--not working-->
+                            <button class="accordion">Ngee Ann Polytechnic, 2020-2023</button>
+                            <div class="panel">
+                                <p>Obtained a Diploma in Cybersecurity & Digital Forensics.</p>
+                            </div>
+
+                            <button class="accordion">Tanjong Katong Girls' School, 2016-2019</button>
+                            <div class="panel">
+                                <p>Obtained GCSE 'O' Level Certificate.</p>
+                            </div>
+
+                            <button class="accordion">Tanjong Katong Primary School, 2010-2015</button>
+                            <div class="panel">
+                                <p>Completed Primary School Leaving Examinations.</p>
+                            </div>
+
                         </div>
                     </aside>
                 </div>
