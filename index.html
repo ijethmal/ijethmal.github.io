@@ -111,22 +111,30 @@
                         </div>
 
                         <!--section 2: education-->
-                        <div id="education" onload="display()">
+                        <div id="education">
                             <!--accordions for education levels-->
-                            <!--not working-->
-                            <button class="accordion">Ngee Ann Polytechnic, 2020-2023</button>
-                            <div class="panel">
-                                <p>Obtained a Diploma in Cybersecurity & Digital Forensics.</p>
+                            <button type="button" onclick="displayInfo('np')" title="Ngee Ann Polytechnic">
+                                Ngee Ann Polytechnic, 2020-2023
+                                <img id="npImg" src="images/down-arrow.png" />
+                            </button>
+                            <div class="info" id="np">
+                                <p>Obtained a diploma in Cybersecurity & Digital Forensics</p>
                             </div>
 
-                            <button class="accordion">Tanjong Katong Girls' School, 2016-2019</button>
-                            <div class="panel">
-                                <p>Obtained GCSE 'O' Level Certificate.</p>
+                            <button type="button" onclick="displayInfo('tkgs')" title="Tanjong Katong Girls' School">
+                                Tanjong Katong Girls' School, 2016-2019
+                                <img id="tkgsImg" src="images/down-arrow.png" />
+                            </button>
+                            <div class="info" id="tkgs">
+                                <p>Received GCSE 'O' Levels Certificate.</p>
                             </div>
 
-                            <button class="accordion">Tanjong Katong Primary School, 2010-2015</button>
-                            <div class="panel">
-                                <p>Completed Primary School Leaving Examinations.</p>
+                            <button type="button" onclick="displayInfo('tkps')" title="Tanjong Katong Primary School">
+                                Tanjong Katong Primary School, 2010-2015
+                                <img id="tkpsImg" src="images/down-arrow.png" />
+                            </button>
+                            <div class="info" id="tkps">
+                                <p>Completed PSLE.</p>
                             </div>
 
                         </div>
@@ -135,6 +143,9 @@
             </div>
 
         </div>
+
+        <!--footer-->
+        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </div>
 </body>
 </html>

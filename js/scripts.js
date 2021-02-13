@@ -1,22 +1,18 @@
-//education accordion codes
+//education accordion
 
-function display() {
-    var acc = document.getElementsByClassName("accordion");
-    var i;
+function displayInfo(infoId) {
+    var info = document.getElementById(infoId);
+    var arrow = infoId + 'Img';
+    arrow = document.getElementById(arrow);
 
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            /* Toggle between adding and removing the "active" class,
-            to highlight the button that controls the panel */
-            this.classList.toggle("active");
-
-            /* Toggle between hiding and showing the active panel */
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        });
+    //if not visible
+    if (info.style.display == "none") {
+        info.style.display = "block";
+        arrow.src = "images/up-arrow.png";
+    }
+    //if visible
+    else {
+        info.style.display = "none";
+        arrow.src = "images/down-arrow.png";
     }
 }
