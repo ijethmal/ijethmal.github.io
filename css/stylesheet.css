@@ -1,4 +1,14 @@
-﻿#content {
+﻿header {
+    background-color: black;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+}
+
+    header li {
+        padding: 0 3em 0 3em;
+    }
+
+#content {
     margin: 2em;
     width:100%;
     padding: 10px;
@@ -81,4 +91,13 @@ time{
     float:right;
     margin:0 auto;
     max-width:100%;
+}
+
+
+footer {
+    background-color: black;
+    font-family: 'Inconsolata', monospace;
+    font-size:1.5vh;
+    color:white;
+    text-align:center;
 }
