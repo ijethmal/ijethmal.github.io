@@ -51,7 +51,7 @@ aside {
 /*online presence styles*/
 #onlineLinks {
     font-family: 'Inconsolata', monospace;
-    display: block;
+    display: none;
     width: 50vw;
     margin: 0.7em auto;
     padding: 1em;
@@ -168,6 +168,23 @@ time{
     max-width:100%;
 }
 
+/*writeup styles*/
+#writeup {
+    font-family: 'Inconsolata', monospace;
+    display: none;
+    width: 50vw;
+    margin: 0.7em;
+    padding: 1em;
+    text-align:left;
+}
+
+#writeup img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    width: 20vw;
+    padding:10px;
+}
 
 footer {
     background-color: black;

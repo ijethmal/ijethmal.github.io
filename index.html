@@ -53,6 +53,10 @@
                                     </li>
 
                                     <li class="nav-item">
+                                        <a class="nav-link" onclick="revealWriteup()">About Me📝</a>
+                                    </li>
+
+                                    <li class="nav-item">
                                         <a class="nav-link" onclick="revealOnline()">Links🌐</a>
                                     </li>
                                 </ul>
@@ -93,7 +97,7 @@
                         </div>
 
                         <!--section 1: blog posts-->
-                        <div id="blog">
+                        <div id="blog" class="text-center">
                             <article>
                                 <h2>#1- Hello!</h2>
                                 <time datetime="2021-02-11">2 February 2021</time>
@@ -124,11 +128,17 @@
                         <div id="education">
                             <!--accordions for education levels-->
                             <button type="button" onclick="displayInfo('np')" title="Ngee Ann Polytechnic">
-                                Ngee Ann Polytechnic, 2020-2023
+                                Ngee Ann Polytechnic, 2020-Present
                                 <img id="npImg" src="images/down-arrow.png" />
                             </button>
                             <div class="info" id="np">
-                                <p>Obtained a diploma in Cybersecurity & Digital Forensics</p>
+                                <p>
+                                    &emsp;Currently in Year 2 of my course, <a target="_blank" href="https://www.np.edu.sg/ict/Pages/csf.aspx">Diploma in Cybersecurity & Digital Forensics</a>, this course has given me the opportunity to not only pick up skills useful for the evolving economy, but also give back to my community and nation by applying these skills and knowledge.
+                                    <br />&emsp;For example, in 2021, I participated in a Youth Expedition Project reaching out to refugees from ElShaddai Refugee Learning Centre (ERLC) in Klang, Malaysia, and taught them to prepare them for their IGCSE ICT.
+                                    <br />&emsp;Fuelled by my desire to give back to the best of my ability, I took part in multiple community service projects and events through my CCA, Leo Club. I also helped organise events within my school by participating actively in my school's main interest group, <a target="_blank" href="https://www.instagram.com/np.ictsociety/">ICT Society</a>.
+                                    <br />&emsp;As a result of displaying academic excellence and all-roundedness, I was awarded the <a target="_blank" href="https://www.np.edu.sg/admissions/Pages/scholarships.aspx">NP Scholarship</a> for my Academic Year 2020/21, and am a current member of <a target="_blank" href="https://www.instagram.com/np_tcp/?hl=en">The Christieara Programme</a>.
+
+                                </p>
                             </div>
 
                             <button type="button" onclick="displayInfo('tkgs')" title="Tanjong Katong Girls' School">
@@ -136,7 +146,10 @@
                                 <img id="tkgsImg" src="images/down-arrow.png" />
                             </button>
                             <div class="info" id="tkgs">
-                                <p>Received GCSE 'O' Levels Certificate.</p>
+                                <p>
+                                    &emsp;Received GCSE 'O' Levels Certificate, and was a committed member of the school's Tenpin Bowling team. Additionally, took part in many meaningful service projects; the most notable of which includes raising hundreds of dollars to support female victims of human trafficking in collaboration with Australia-based enterprise <a target="_blank" href="https://generation414.com/">Generation 414</a>.<br />&emsp;During this time, I also made the most of my secondary school years by taking part in enrichment projects- such as being one of ten select students from the school to take part in the Singapore-Thailand Enhanced Partnership Programme 2017-2018.
+                                    <br />&emsp;Having won both Bronze and Silver in The Queen's Commonwealth Essay and represented my school in the <a target="_blank" href="https://www.mgs.moe.edu.sg/secondary/others/key-programmes/regional-youth-conference">10th MGS Regional Youth Conference</a>, I displayed my intellectual curiosity and flair for communication.
+                                </p>
                             </div>
 
                             <button type="button" onclick="displayInfo('tkps')" title="Tanjong Katong Primary School">
@@ -148,6 +161,14 @@
                             </div>
 
                         </div>
+
+                        <!--section 3: personal writeup-->
+                        <div id="writeup">
+                            <img align="left" alt="profile picture" src="images/profile-pic.png" />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        
+                        </div>
+
                     </aside>
                 </div>
             </div>
