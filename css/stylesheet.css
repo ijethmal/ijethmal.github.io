@@ -193,3 +193,12 @@ footer {
     color:white;
     text-align:center;
 }
+
+/*indsury engagement styles*/
+#industry{
+    text-align: center;
+    display:none;
+    width: 50vw;
+    margin: 0.7em;
+    padding: 1em;
+}
