@@ -3,6 +3,7 @@ function revealBlog() {
     document.getElementById('education').style.display = "none";
     document.getElementById('onlineLinks').style.display = "none";
     document.getElementById('writeup').style.display = "none";
+    document.getElementById('industry').style.display = "none";
 }
 
 function revealEdu() {
@@ -10,6 +11,7 @@ function revealEdu() {
     document.getElementById('blog').style.display = "none";
     document.getElementById('onlineLinks').style.display = "none";
     document.getElementById('writeup').style.display = "none";
+    document.getElementById('industry').style.display = "none";
 }
 
 function revealOnline() {
@@ -17,6 +19,7 @@ function revealOnline() {
     document.getElementById('blog').style.display = "none";
     document.getElementById('education').style.display = "none";
     document.getElementById('writeup').style.display = "none";
+    document.getElementById('industry').style.display = "none";
 }
 
 function revealWriteup() {
@@ -24,4 +27,13 @@ function revealWriteup() {
     document.getElementById('onlineLinks').style.display = "none";
     document.getElementById('blog').style.display = "none";
     document.getElementById('education').style.display = "none";
+    document.getElementById('industry').style.display = "none";
+}
+
+function revealIndustry() {
+    document.getElementById('writeup').style.display = "none";
+    document.getElementById('onlineLinks').style.display = "none";
+    document.getElementById('blog').style.display = "none";
+    document.getElementById('education').style.display = "none";
+    document.getElementById('industry').style.display = "block";
 }
