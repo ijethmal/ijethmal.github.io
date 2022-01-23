@@ -202,3 +202,8 @@ footer {
     margin: 0.7em;
     padding: 1em;
 }
+
+#industry img{
+    width: 40vw;
+    text-align:center;
+}
