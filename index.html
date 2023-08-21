@@ -54,15 +54,13 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" onclick="revealWriteup()">About Me📝</a>
+                                        <a class="nav-link" onclick="revealWriteup()">Experience</a>
                                     </li>
 
                                     <li class="nav-item">
                                         <a class="nav-link" onclick="revealOnline()">Links🌐</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" onclick="revealIndustry()">Industry Engagement & S-L</a>
-                                    </li>
+                                    
                                 </ul>
                             </div>
                         </nav>
@@ -79,7 +77,7 @@
                     <div id="about">
                         <h3>About Isha</h3>
                         <p>
-                            Hi! I am a student of Ngee Ann Polytechnic's Cybersecurity and Digital Forensics course, and an aspiring digital forensics investigator!
+                            Freshman in NTU (BEng Computer Science), passionate about Information Security and Penetration Testing. Previously worked in SecureAuth Corporation as an Information Security intern and studied in Ngee Ann Polytechnic, Diploma in Cybersecurity and Digital Forensics.
                             <br /><a href="https://www.linkedin.com/in/isha-jethmal/">My LinkedIn</a>
                         </p>
                     </div>
@@ -90,7 +88,7 @@
                     <aside>
 
                         <div id="onlineLinks">
-
+                        <!--note: add more links-->
                             <a href="https://www.linkedin.com/in/isha-jethmal/" title="LinkedIn" target="_blank" class="fa fa-linkedin fa-3x"></a>
                             <a href="https://github.com/ijethmal" title="GitHub" target="_blank" class="fa fa-github fa-3x"></a>
                         </div>
@@ -126,17 +124,26 @@
                         <!--section 2: education-->
                         <div id="education">
                             <!--accordions for education levels-->
+                            <button type="button" onclick="displayInfo('ntu')" title="Nanyang Technological University">
+                                Nanyang Technological University, 2023-2027
+                                <img id="ntuImg" src="images/down-arrow.png" />
+                            </button>
+                            <div class="info" id="ntu">
+                                <p>
+                                    &emsp;I am currently in Year 1 of my program, BEng Computer Science, hoping to specialize in Information Security and working towards a career in the same area. This prestigious program gives me an valuable opportunity to deepen my existing knowledge of computing and to apply it in the real world, as well as connect with peers who share my passions and goals.
+                                </p>
+                            </div>
+                            
                             <button type="button" onclick="displayInfo('np')" title="Ngee Ann Polytechnic">
-                                Ngee Ann Polytechnic, 2020-Present
+                                Ngee Ann Polytechnic, 2020-2023
                                 <img id="npImg" src="images/down-arrow.png" />
                             </button>
                             <div class="info" id="np">
                                 <p>
-                                    &emsp;I am currently in Year 2 of my course, Diploma in Cybersecurity & Digital Forensics in Ngee Ann Polytechnic, working towards a career in Digital Forensics. This course has given me the opportunity to learn and put into practice skills such as web application penetration testing, malware analysis, and more. To deepen my knowledge about my line of study, I have attended webinars about Cyber-Security challenges and future perspectives, and about Artificial Intelligence for Cybersecurity.
+                                    &emsp;Here I achieved a 3.71/4.0 GPA in my Diploma in Cybersecurity & Digital Forensics, with Advanced Computing Mathematics. This course gave me the opportunity to learn and put into practice skills such as web application penetration testing, malware analysis, and digital forensics. To deepen my knowledge about my line of study, I attended webinars about Cyber-Security challenges and future perspectives, and about Artificial Intelligence for Cybersecurity.
                                     <br />&emsp;Fuelled by my desire to give back to the community, I took part in many service-learning events in NP. For example, in 2021, my classmates and I taught elderly from Yong-en Care Centre to use Canva, as they had expressed interest in learning to use it, and so that we could use our knowledge to help them to adapt to a digitalized world. The same year, I was a member of a Youth Expedition Project preparing refugees from ElShaddai Refugee Learning Centre in Klang, Malaysia for their IGCSE ICT. In my free time, I volunteer in community service events through my school's community service club.
                                     <br />&emsp; An active member of multiple clubs, I am the current Vice President of Operations in my school's interest group, ICT Society, and help organize school events as well as help out for school outreach events.
-                                    <br />&emsp;As a result of displaying academic excellence and all-roundedness, I was awarded the NP Scholarship for Year 1 and Year 2, and am a current member of The Christieara Programme. I was also given the opportuity to represent my school at the Pre-University Seminar 2021 and the Polytechnic Forum 2021.
-
+                                    <br />&emsp;As a result of displaying academic excellence and all-roundedness, I was awarded the NP Scholarship for all my years in the school, and was a current member of The Christieara Programme. I was given the opportuity to represent my school at the Pre-University Seminar 2021 and the Polytechnic Forum 2021.
                                 </p>
                             </div>
 
@@ -155,48 +162,21 @@
 
                         <!--section 3: personal writeup-->
                         <div id="writeup" onload="loadAbout()">
-                            <img align="left" alt="profile picture" src="images/isha.jpg" />
                             <section id="about-text">
-                                <p>Hi! My name is Isha, and I'm studying Cybersecurity and Digital Forensics at Ngee Ann Polytechnic and working towards a career in Digital Forensics.</p>
-                                <h3>Cybersecurity and Digital Forensics</h3>
-                                <p>This course has given me the opportunity to learn and put into practice course-related skills. The types of projects I worked on included penetration testing of published web applications, digital forensic investigation, and malware analysis.</p>
-                                <br /><p>To deepen my knowledge about my line of study, I have attended webinars about Cyber-Security challenges and future perspectives, and about Artificial Intelligence for Cybersecurity.</p>
-                                <h3>Community Service</h3>
-                                <p>Fuelled by my desire to give back to the community, I took part in many service-learning events in NP. For example, in 2021, my classmates and I taught elderly from Yong-en Care Centre to use Canva, as they had expressed interest in learning to use it, and so that we could use our knowledge to help them to adapt to a digitalized world.
-                                    <br />The same year, I was a member of a Youth Expedition Project preparing refugees from ElShaddai Refugee Learning Centre in Klang, Malaysia for their IGCSE ICT. In my free time, I volunteer in community service events.
-                                    <br />In secondary school, I organized a project to raise hundreds of dollars supporting female victims of human trafficking in collaboration with Australia-based enterprise Generation 414.</p>
-                                <h3>Leadership</h3>
-                                <p>Currently, I am the Vice President of Operations for my interest group in school. In 2021, I was given the opportunity to represent my school at the Pre-University Seminar and the Polytechnic Forum. I am also a member of The Christieara Programme.</p>
+                                <p>My experience in the industry:</p>
+                                <h3>Internship at SecureAuth Corporation</h3>
+                                <p>I interned with SecureAuth (Silicon Valley, California) as an Information security Intern from September 2022 to June 2023. My internship tasks included testing new and existing products for security vulnerabilities, evaluating infrastructure for security issues, establishing processes for security testing within the environment, and assisting in monitoring the environments for vulnerabilities and security issues.</p>
+                                <br /><p>During the course of the internship, I took the initiative to self-learn new technologies and skills so that I could undertake more tasks in the company. I learned Mobile Application Penetration Testing, learned how to use Cloud Security tools such as Lacework and Wiz and created python scripts to automate API requests for information about AWS Resources.</p>
+                                <h3>Repositories</h3>
+                                <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fijethmal%2Fleetcode-solutions%2Fblob%2Fmain%2FREADME.md&style=default&type=markdown&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+                                <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fijethmal%2Fctf-writeups%2Fblob%2Fmain%2FREADME.md&style=default&type=markdown&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+                                <p></p>
+                                <h3>Projects</h3>
+                                <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fijethmal%2Fprotect-sg-wildlife%2Fblob%2Fmain%2Fhome.html&style=default&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
                             </section>
                         </div>
 
-                        <!--section 4: industry engagement-->
-                        <div id="industry">
-                            <div id="col-sm-8">
-                                <aside>
-                                    <h2>Industry Engagement</h2>
-                                    <p>To boost my awareness of the cybersecurity industry today and to hear industry experts' perspectives on future advancements in the field, I attended some webinars and increased my knowledge of my industry.</p>
-
-                                    <br /><h4>Cyber-Security challenges and future perspectives</h4>
-                                    <img src="images/proof1-cybersecurity challenges and future perspectives.png">
-                                    <br /><a href="https://www.eventbrite.com/e/webinar-cyber-security-challenges-and-future-perspectives-tickets-240940017077">Event Page</a>
-                                    <p>In this webinar, I gained insight about the importance of cybersecurity in the current landscape, and learned about the different types of projects and measures being taken by companies to inculcate cybersecurity awareness in their employees. The webinar was hosted by projects Cyber-MAR and FORESIGHT, two EU-based projects focused on developing cyber awareness in the maritime sector (Cyber-MAR), aviation, power grid and naval sectors (FORESIGHT). I have a personal interest in the maritime and aviation sectors, so I was interested to find out more about cybersecurity in those sectors, the types of attacks prevalent in those industries today and the actions being taken to combat them. Moreover, with Singapore's recent strategies strengthening cybersecurity in our maritime and aviation sectors, I wanted to find out if there was anything else that Singapore could do in the future to protect our these sectors and our economy better.</p>
-
-                                    <br /><h4>Trailblazing the Artificial Intelligence for Cybersecurity Discipline</h4>
-                                    <img src="images/proof2-aiincybersec.png">
-                                    <br /><a href="https://www.eventbrite.com/e/trailblazing-the-artificial-intelligence-for-cybersecurity-discipline-tickets-211163725387">Event Page</a>
-                                    <p>I attended this webinar because though I am a cybersecurity student, I have also studied deep learning, and it was interesting to know how the two disciplines could merge. In the webinar, it was highlighted that a lot of cybersecurity tasks are repetitive, which is why there is room for AI in cybersecurity, to take over the repetitive tasks so that efforts can be focused on other tasks. AI is also being used to boost analysis, in measures that were discussed in the webinar. The webinar also covered possible ways to cultivate AI for the cybersecurity discipline in the future, and my key takeaway from this experience is to continue to upskill and familiarise myself with new technology. This is because there are always new technologies being developed that can boost efficiency and accuracy even in tasks in my own field.</p>
-
-                                    <br /><h2>Service Learning</h2>
-                                    <p>Service-Learning provided me with the opportunity to apply what I learnt in school to help my community. It also taught me values that come in useful for my everyday life and for when I enter the workforce. In November 2021, I conducted a virtual Service-Learning project with my classmates in conjunction with Yong-en Care Center to teach elderly how to use Canva.</p>
-                                    <img src="images/sl-brochure.jpg">
-                                    <p>In this project, I was an English teacher, showing and explaining to the beneficiaries the functionalities of the software and guiding them through it. My tasks included guiding them through the steps to create designs on Canva through Zoom, with the help of my fellow classmates (who were teachers with me), making sure everyone understood what was being taught and helping the beneficiaries with any issues they faced. Before the actual event, we also had to create the lesson material, which involved a lot of planning and time management.</p>
-                                    <p>We faced many issues on the day itself, some main issues being the difficulty in guiding some beneficiaries who were lost, last-minute changes to the schedule due to time constraints, and sudden changes in the system which caused me to take over a section which I had not prepared to teach. </p>
-                                    <p>Despite the issues, the event was deemed a successful one as the beneficiaries were satisfied and had learnt something new at the end of the session, and me and my classmates did too. Personally, I have taken away from this the understanding that it is important to be aware and considerate of the people I am working with, and to be able to adapt to new situations. I also developed my personal values of team management and patience.</p>
-                                </aside>
-                            </div>
-                        </div>
-
+                        <!--section 4: -->
                     </aside>
                 </div>
             </div>
