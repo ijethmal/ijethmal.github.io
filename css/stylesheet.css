@@ -207,3 +207,9 @@ footer {
     width: 40vw;
     text-align:center;
 }
+
+/*recommendation style*/
+#recommendation{
+    border: 2px solid black;
+    box-shadow: 0.5em 0.5em 2px gray;
+}
