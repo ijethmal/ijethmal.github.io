@@ -212,4 +212,7 @@ footer {
 #recommendation{
     border: 2px solid black;
     box-shadow: 0.5em 0.5em 2px gray;
+    padding: 1em;
+    margin:0.7em;
+    margin-right:3em;
 }
