@@ -1,2 +1,2 @@
 # ijethmal.github.io
-my CV!
+my CV! https://ijethmal.github.io/
