@@ -1,51 +1,153 @@
-﻿/*general styles*/
-header {
-    background-color: black;
-    font-family: 'Inconsolata', monospace;
+﻿/* General body styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+    height: 100%;
+    justify-content: center;
+}
+
+/* Add this to your CSS */
+.container .col-sm-8, .container .col-sm-4 {
+    width: 100%;
+}
+
+.container .col-sm-8 {
+    display: none; /* Ensure all sections are hidden by default */
+}
+
+.container .col-sm-8.active {
+    display: block; /* Ensure only the active section is displayed */
+}
+
+
+/* Navbar styles */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
     color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-header li {
-    padding: 0 3em 0 3em;
+.navbar li a:hover {
+    background-color: #111;
 }
 
-#content {
-    margin: 2em;
-    width:100%;
-    padding: 10px;
-    font-family: 'Inconsolata', monospace;
+/* Footer styles */
+.footer {
+    text-align: center;
+    display: block;
+    background-color: #000;
+    color: white;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    margin: 0; /* Remove any margins */
+    margin-top:1em;
+    padding: 0.7em; /* Add padding if needed */
 }
 
-.row{
-    margin: auto;
-    width:100%;
+/* Container styles */
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 0.7em;
+    margin-left: 5em;
+    margin-right: 5em;
 }
 
-pre{
-    background-color:black;
-}
-
-.nav-item:hover{
-    cursor:pointer;
-}
-
-/*about styles*/
+/* About styles */
 #about {
     border: 2px solid black;
     box-shadow: 0.5em 0.5em 2px gray;
-    position:sticky;
-    top:0;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    height:fit-content;
+    top: 1em;
     padding: 1em;
-    width:60vw;
-    max-width:100%;
-    margin:0.7em;
-    margin-right:3em;
+    width: 30%;
+    margin-right: 3em;
     font-family: 'Inconsolata', monospace;
 }
 
-aside {
-    max-width: 90%;
+/*home*/
+#home {
+    font-family: 'Inconsolata', monospace;
+    width: 50vw;
+    padding: 1em;
+    text-align: left;
+}
+
+/* Education styles */
+#education {
+    font-family: 'Inconsolata', monospace;
+    width: 50vw;
+    padding: 1em;
+    display:none;
+}
+
+#education button {
+    width: 100%;
+    background-color: white;
+    text-align: left;
+    padding: 1em;
+    margin-top: 3em;
+}
+
+#education button:hover {
+    border-color: red;
+}
+
+#education .info {
+    display: none;
+}
+
+#education button img {
+    float: right;
     margin: 0 auto;
+    max-width: 100%;
+}
+
+/*writeup styles*/
+#writeup {
+    font-family: 'Inconsolata', monospace;
+    display: none;
+    width: 50vw;
+    margin: 1em;
+    padding: 1em;
+    text-align:left;
+}
+
+#writeup img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    width: 20vw;
+    padding:10px;
+}
+
+#recommendation{
+    border: 2px solid black;
+    box-shadow: 0.5em 0.5em 2px gray;
+    padding: 0.7em;
+    margin:1em;
 }
 
 /*online presence styles*/
@@ -70,7 +172,6 @@ aside {
     text-align: center;
     text-decoration: none;
     margin: 8px 5px;
-    
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -107,112 +208,3 @@ aside {
     color: white;
 }
 
-/*blog styles*/
-#blog {
-    font-family: 'Inconsolata', monospace;
-    display: none;
-}
-
-article {
-    padding: 1em;
-    border: 1px dotted gray;
-    margin: 1em auto;
-    max-width: 100%;
-    margin-left:0px;
-    width:50vw;
-}
-
-article img {
-    max-width: 100%;
-    max-height: 100%;
-    margin: 0 auto;
-    display:block;
-    width: 40vw;
-}
-
-time{
-    font-weight:200;
-    color:gray;
-    font-size:small;
-}
-
-/*education styles*/
-#education {
-    font-family: 'Inconsolata', monospace;
-    display: none;
-    width: 50vw;
-    margin: 0.7em;
-    padding: 1em;
-}
-
-#education button {
-    width:90vw;
-    max-width:100%;
-    background-color:white;
-    text-align:left;
-    padding:1em;
-    margin-top:3em;
-}
-
-#education button:hover{
-    border-color:red;
-}
-
-#education .info{
-    display:none;
-}
-
-#education button img{
-    float:right;
-    margin:0 auto;
-    max-width:100%;
-}
-
-/*writeup styles*/
-#writeup {
-    font-family: 'Inconsolata', monospace;
-    display: none;
-    width: 50vw;
-    margin: 0.7em;
-    padding: 1em;
-    text-align:left;
-}
-
-#writeup img {
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    width: 20vw;
-    padding:10px;
-}
-
-footer {
-    background-color: black;
-    font-family: 'Inconsolata', monospace;
-    font-size:1.5vh;
-    color:white;
-    text-align:center;
-}
-
-/*indsury engagement styles*/
-#industry{
-    text-align: center;
-    display:none;
-    width: 50vw;
-    margin: 0.7em;
-    padding: 1em;
-}
-
-#industry img{
-    width: 40vw;
-    text-align:center;
-}
-
-/*recommendation style*/
-#recommendation{
-    border: 2px solid black;
-    box-shadow: 0.5em 0.5em 2px gray;
-    padding: 1em;
-    margin:0.7em;
-    margin-right:3em;
-}

@@ -1,221 +1,136 @@
 ﻿<!DOCTYPE html>
-<!--test-->
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta title="author" content="isha jethmal" />
-    <meta title="description" content="isha's resume website" />
-    <title>Isha Jethmal</title>
+    <title>Isha Jethmal's CV</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-    <!--stylesheet-->
-    <link rel="stylesheet" href="css/stylesheet.css" />
-    <link rel="stylesheet" href="css/prism.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
-    <!--scripts-->
-    <script src="prism.js"></script>
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="js/nav-scripts.js"></script>
     <script src="js/scripts.js"></script>
     <!--fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
           crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--mobile friendly-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <!--bootstrap-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
-    <div class="container-fluid">
-        <!--header-->
-        <div class="row">
-            <div class="col-sm-12 row-no-gutters">
-                <header>
-                    <link rel="preconnect" href="https://fonts.gstatic.com">
-                    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
-                    <script src="js/nav-scripts.js"></script>
-                    <section>
-                        <!--navigation bar-->
-                        <nav class="navbar navbar-expand-md navbar-custom navbar-dark">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <!-- Navbar links -->
-                            <div class="collapse navbar-collapse row" id="navbar">
-                                <ul class="navbar-nav nav-custom mx-auto">
-                                    <li class="nav-item">
-                                        <a class="nav-link" onclick="revealEdu()">Education🎓</a>
-                                    </li>
+    <!--navbar-->
+    <ul class="navbar">
+        <li><a onclick="revealHome()">Home</a></li>
+        <li><a onclick="revealEdu()">Education</a></li>
+        <li><a onclick="revealWriteup()" >Experience</a></li>
+        <li><a onclick="revealOnline()" >Links</a></li>
+    </ul>
 
-                                    <li class="nav-item">
-                                        <a class="nav-link" onclick="revealWriteup()">Experience</a>
-                                    </li>
+    <!--blog body-->
+    <div class="container row">
+        <div class="col-sm-4" id="about">
+            <h3>About Isha</h3>
+            <p>
+                Freshman in NTU (BComp Computer Science), passionate about Information Security and Penetration Testing. Previously an Information Security intern SecureAuth Corporation and graduated with a Diploma in Cybersecurity and Digital Forensics.
+                <br /><a href="https://www.linkedin.com/in/isha-jethmal/">My LinkedIn</a>
+            </p>
+        </div>
 
-                                    <li class="nav-item">
-                                        <a class="nav-link" onclick="revealOnline()">Links🌐</a>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-                        </nav>
-                    </section>
-                </header>
+        <div class="col-sm-8" id="home" style="display:block">
+            <p>Welcome! To learn more about my work, click on the navigation links above.
+            </p>
+            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+            <div class="elfsight-app-f17583ce-2571-47be-a070-22c0edb92ebc" data-elfsight-app-lazy></div>
+        </div>
+
+        <div class="col-sm-8" id="education" style="display: none;">
+            <button type="button" onclick="displayInfo('ntu')" title="Nanyang Technological University">
+                Nanyang Technological University, 2023-2027
+                <img id="ntuImg" src="images/down-arrow.png" />
+            </button>
+            <div class="info" id="ntu">
+                <p>
+                    &emsp;I am currently in Year 2 of my program, BComp Computer Science, hoping to specialize in Information Security and working towards a career in the same area. This prestigious program gives me an valuable opportunity to deepen my existing knowledge of computing and to apply it in the real world, as well as connect with peers who share my passions and goals.
+                </p>
+            </div>
+            
+            <button type="button" onclick="displayInfo('np')" title="Ngee Ann Polytechnic">
+                Ngee Ann Polytechnic, 2020-2023
+                <img id="npImg" src="images/down-arrow.png" />
+            </button>
+            <div class="info" id="np">
+                <p>
+                    &emsp;Here I achieved a 3.71/4.0 GPA in my Diploma in Cybersecurity & Digital Forensics, with Advanced Computing Mathematics. This course gave me the opportunity to learn and put into practice skills such as web application penetration testing, malware analysis, and digital forensics. To deepen my knowledge about my line of study, I attended webinars about Cyber-Security challenges and future perspectives, and about Artificial Intelligence for Cybersecurity.
+                    <br />&emsp;Fuelled by my desire to give back to the community, I took part in many service-learning events in NP. For example, in 2021, my classmates and I taught elderly from Yong-en Care Centre to use Canva, as they had expressed interest in learning to use it, and so that we could use our knowledge to help them to adapt to a digitalized world. The same year, I was a member of a Youth Expedition Project preparing refugees from ElShaddai Refugee Learning Centre in Klang, Malaysia for their IGCSE ICT. In my free time, I volunteered in community service events through my school's community service club.
+                    <br />&emsp; An active member of multiple clubs, I was the Vice President of Operations in my school's interest group, ICT Society, and help organize school events as well as helped out with school outreach events.
+                    <br />&emsp;As a result of displaying academic excellence and all-roundedness, I was awarded the NP Scholarship for all my years in the school, and was a member of The Christieara Programme. I was given the opportuity to represent my school at the Pre-University Seminar 2021 and the Polytechnic Forum 2021.
+                </p>
+            </div>
+
+            <button type="button" onclick="displayInfo('tkgs')" title="Tanjong Katong Girls' School">
+                Tanjong Katong Girls' School, 2016-2019
+                <img id="tkgsImg" src="images/down-arrow.png" />
+            </button>
+            <div class="info" id="tkgs">
+                <p>
+                    &emsp;Received GCSE 'O' Levels Certificate, and was a committed member of the school's Tenpin Bowling team. Additionally, took part in many meaningful service projects; the most notable of which includes raising hundreds of dollars to support female victims of human trafficking in collaboration with Australia-based enterprise <a target="_blank" href="https://generation414.com/">Generation 414</a>.<br />&emsp;During this time, I also made the most of my secondary school years by taking part in enrichment projects- such as being one of ten select students from the school to take part in the Singapore-Thailand Enhanced Partnership Programme 2017-2018.
+                    <br />&emsp;Having won both Bronze and Silver in The Queen's Commonwealth Essay and represented my school in the <a target="_blank" href="https://www.mgs.moe.edu.sg/secondary/others/key-programmes/regional-youth-conference">10th MGS Regional Youth Conference</a>, I displayed my intellectual curiosity and flair for communication. At the end of my 4 years in secondary school, I was awarded the EAGLES award.
+                </p>
             </div>
         </div>
 
-        <!--content-->
-        <div id="content">
-            <!--sidebar with 'about'-->
-            <div class="row">
-                <div class="col-sm-4">
-                    <div id="about">
-                        <h3>About Isha</h3>
-                        <p>
-                            Freshman in NTU (BComp Computer Science), passionate about Information Security and Penetration Testing. Previously an Information Security intern SecureAuth Corporation and graduated with a Diploma in Cybersecurity and Digital Forensics.
-                            <br /><a href="https://www.linkedin.com/in/isha-jethmal/">My LinkedIn</a>
-                        </p>
-                    </div>
+        <div class="col-sm-8" id="writeup" style="display:none">
+            <section id="about-text">
+                <p>My experience in the industry:</p>
+                <h3>Internship at SecureAuth Corporation</h3>
+                <p>Internship tasks included
+                    <ul>
+                        <li>testing new and existing products for security vulnerabilities</li>
+                        <li>evaluating infrastructure for security issues</li>
+                        <li>establishing processes for security testing within the environment</li>
+                        <li>and assisting in monitoring the environments for vulnerabilities and security issues</li>
+                      </ul></p>
+                    <p><b>Skills:</b> Cybersecurity · Application Security · Cloud Computing · Analytical Skills · Virtual Machines · VMware · Communication · Linux · Amazon Web Services (AWS) · Cloud Security · Penetration Testing</p>
+                <div id="recommendation">
+                    <p>“I had the pleasure to work with and mentor Isha for 9 months here at SecureAuth. From day 1, her knowledge was very good, but she enthusiastically took on tasks that she was not familiar with and without fail, she figured out new topics quickly and thoroughly.
+
+                    <br />Her enthusiasm for security, especially penetration testing, is second to none. She truly loves to perform pen testing and very quickly learned to write concise, detailed, and valuable testing reports providing the company with information that can be used to improve the security and functionality of the products she tested. She also takes on new topics that she has never worked on and never questions if she can do a new item - her quest to increase her knowledge seems never ending and will take her far in any career that she chooses.
+                    
+                    <br />Isha is going to be a valuable member of a security team immediately upon being hired, I would not hesitate have Isha working on my team again. She is very quickly going to make a name for herself in the security world.
+                    
+                    <br />I look forward to seeing what Isha can accomplish.”</p>
+                    <p>- <b><a href="https://www.linkedin.com/in/paulkincaid/">Paul Kincaid</a></b>, Vice President, Information/Product Security and DevOps at SecureAuth Corporation </p>
                 </div>
-
-                <div id="col-sm-8">
-                    <!--main content-->
-                    <aside>
-
-                        <div id="onlineLinks">
-                        <!--note: add more links-->
-                            <a href="https://www.linkedin.com/in/isha-jethmal/" title="LinkedIn" target="_blank" class="fa fa-linkedin fa-3x"></a>
-                            <a href="https://github.com/ijethmal" title="GitHub" target="_blank" class="fa fa-github fa-3x"></a>
-                        </div>
-
-                        <!--section 1: blog posts-->
-                        <div id="blog" class="text-center">
-                            <article>
-                                <h2>#1- Hello!</h2>
-                                <time datetime="2021-02-11">2 February 2021</time>
-                                <p>Flexbox is the most modern way to center things on the page, and makes designing responsive layouts much easier than it used to be. However, it's not fully supported in some legacy browsers like Internet Explorer.</p>
-                            </article>
-
-                            <article>
-                                <h2>#second- Lol</h2>
-                                <time datetime="2021-03-11">3 February 2021</time>
-                                <img src="images/placeholder.jpg" />
-                                <p><b>James W. Gordon</b> is a fictional character appearing in American comic books published by DC Comics, most commonly in association with the superhero Batman. The character debuted in the first panel of Detective Comics #27 (May 1939), Batman's first appearance, making him the first Batman supporting character ever to be introduced.</p>
-                            </article>
-
-                            <article>
-                                <h2>#tres- two posts in one day waddup</h2>
-                                <time datetime="2021-03-11">3 February 2021</time>
-                                <p>Quantum computing is the use of <b>quantum phenomena</b> such as <i>superposition</i> and <i>entanglement</i> to perform computation. Computers that perform quantum computations are known as quantum computers.[1]:I-5 Quantum computers are believed to be able to solve certain computational problems, such as integer factorization (which underlies RSA encryption), substantially faster than classical computers. The study of quantum computing is a subfield of quantum information science.</p>
-                            </article>
-
-                            <article>
-                                <h2>Post 2</h2>
-                                <time datetime="2021-10-11">10 February 2021</time>
-                                <p>lollipop lollipop oh lolli lolli lolli 🎵lollipOP LOLlipop oOo lOlli lolli lolli~🎵</p>
-                            </article>
-                        </div>
-
-                        <!--section 2: education-->
-                        <div id="education">
-                            <!--accordions for education levels-->
-                            <button type="button" onclick="displayInfo('ntu')" title="Nanyang Technological University">
-                                Nanyang Technological University, 2023-2027
-                                <img id="ntuImg" src="images/down-arrow.png" />
-                            </button>
-                            <div class="info" id="ntu">
-                                <p>
-                                    &emsp;I am currently in Year 1 of my program, BComp Computer Science, hoping to specialize in Information Security and working towards a career in the same area. This prestigious program gives me an valuable opportunity to deepen my existing knowledge of computing and to apply it in the real world, as well as connect with peers who share my passions and goals.
-                                </p>
-                            </div>
-                            
-                            <button type="button" onclick="displayInfo('np')" title="Ngee Ann Polytechnic">
-                                Ngee Ann Polytechnic, 2020-2023
-                                <img id="npImg" src="images/down-arrow.png" />
-                            </button>
-                            <div class="info" id="np">
-                                <p>
-                                    &emsp;Here I achieved a 3.71/4.0 GPA in my Diploma in Cybersecurity & Digital Forensics, with Advanced Computing Mathematics. This course gave me the opportunity to learn and put into practice skills such as web application penetration testing, malware analysis, and digital forensics. To deepen my knowledge about my line of study, I attended webinars about Cyber-Security challenges and future perspectives, and about Artificial Intelligence for Cybersecurity.
-                                    <br />&emsp;Fuelled by my desire to give back to the community, I took part in many service-learning events in NP. For example, in 2021, my classmates and I taught elderly from Yong-en Care Centre to use Canva, as they had expressed interest in learning to use it, and so that we could use our knowledge to help them to adapt to a digitalized world. The same year, I was a member of a Youth Expedition Project preparing refugees from ElShaddai Refugee Learning Centre in Klang, Malaysia for their IGCSE ICT. In my free time, I volunteered in community service events through my school's community service club.
-                                    <br />&emsp; An active member of multiple clubs, I was the Vice President of Operations in my school's interest group, ICT Society, and help organize school events as well as helped out with school outreach events.
-                                    <br />&emsp;As a result of displaying academic excellence and all-roundedness, I was awarded the NP Scholarship for all my years in the school, and was a member of The Christieara Programme. I was given the opportuity to represent my school at the Pre-University Seminar 2021 and the Polytechnic Forum 2021.
-                                </p>
-                            </div>
-
-                            <button type="button" onclick="displayInfo('tkgs')" title="Tanjong Katong Girls' School">
-                                Tanjong Katong Girls' School, 2016-2019
-                                <img id="tkgsImg" src="images/down-arrow.png" />
-                            </button>
-                            <div class="info" id="tkgs">
-                                <p>
-                                    &emsp;Received GCSE 'O' Levels Certificate, and was a committed member of the school's Tenpin Bowling team. Additionally, took part in many meaningful service projects; the most notable of which includes raising hundreds of dollars to support female victims of human trafficking in collaboration with Australia-based enterprise <a target="_blank" href="https://generation414.com/">Generation 414</a>.<br />&emsp;During this time, I also made the most of my secondary school years by taking part in enrichment projects- such as being one of ten select students from the school to take part in the Singapore-Thailand Enhanced Partnership Programme 2017-2018.
-                                    <br />&emsp;Having won both Bronze and Silver in The Queen's Commonwealth Essay and represented my school in the <a target="_blank" href="https://www.mgs.moe.edu.sg/secondary/others/key-programmes/regional-youth-conference">10th MGS Regional Youth Conference</a>, I displayed my intellectual curiosity and flair for communication. At the end of my 4 years in secondary school, I was awarded the EAGLES award.
-                                </p>
-                            </div>
-
-                        </div>
-
-                        <!--section 3: personal writeup-->
-                        <div id="writeup" onload="loadAbout()">
-                            <section id="about-text">
-                                <p>My experience in the industry:</p>
-                                <h3>Internship at SecureAuth Corporation</h3>
-                                <p>Internship tasks included
-                                    <ul>
-                                        <li>testing new and existing products for security vulnerabilities</li>
-                                        <li>evaluating infrastructure for security issues</li>
-                                        <li>establishing processes for security testing within the environment</li>
-                                        <li>and assisting in monitoring the environments for vulnerabilities and security issues</li>
-                                      </ul></p>
-                                    <p><b>Skills:</b> Cybersecurity · Application Security · Cloud Computing · Analytical Skills · Virtual Machines · VMware · Communication · Linux · Amazon Web Services (AWS) · Cloud Security · Penetration Testing</p>
-                                <div id="recommendation">
-                                    <p>“I had the pleasure to work with and mentor Isha for 9 months here at SecureAuth. From day 1, her knowledge was very good, but she enthusiastically took on tasks that she was not familiar with and without fail, she figured out new topics quickly and thoroughly.
-
-                                    <br />Her enthusiasm for security, especially penetration testing, is second to none. She truly loves to perform pen testing and very quickly learned to write concise, detailed, and valuable testing reports providing the company with information that can be used to improve the security and functionality of the products she tested. She also takes on new topics that she has never worked on and never questions if she can do a new item - her quest to increase her knowledge seems never ending and will take her far in any career that she chooses.
-                                    
-                                    <br />Isha is going to be a valuable member of a security team immediately upon being hired, I would not hesitate have Isha working on my team again. She is very quickly going to make a name for herself in the security world.
-                                    
-                                    <br />I look forward to seeing what Isha can accomplish.”</p>
-                                    <p>- <b><a href="https://www.linkedin.com/in/paulkincaid/">Paul Kincaid</a></b>, Vice President, Information/Product Security and DevOps at SecureAuth Corporation </p>
-                                </div>
-                                <!--<div class='sk-ww-linkedin-recommendations' data-embed-id='182907'></div><script src='https://widgets.sociablekit.com/linkedin-recommendations/widget.js' async defer></script>-->
-                                <h3>Repositories</h3>
-                                <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fijethmal%2Fleetcode-solutions%2Fblob%2Fmain%2FREADME.md&style=default&type=markdown&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
-                                <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fijethmal%2Fctf-writeups%2Fblob%2Fmain%2FREADME.md&style=default&type=markdown&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
-                                <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fijethmal%2Fbeepboop-discord-bot%2Fblob%2Fmaster%2FREADME.md&style=default&type=markdown&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
-                                <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fijethmal%2Flacework-scripts-python%2Fblob%2Fmaster%2FREADME.md&style=default&type=markdown&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
-                                <p></p>
-                                <h3>Projects</h3>
-                                <a href="https://king-prawn-app-ykahj.ondigitalocean.app/">A microsite I created for a forum project.</a>
-                                <!--<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fijethmal%2Fprotect-sg-wildlife%2Fblob%2Fmain%2Fhome.html&style=default&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>-->
-                            </section>
-                        </div>
-
-                        <!--section 4: -->
-                    </aside>
-                </div>
-            </div>
-
+                <!--<div class='sk-ww-linkedin-recommendations' data-embed-id='182907'></div><script src='https://widgets.sociablekit.com/linkedin-recommendations/widget.js' async defer></script>-->
+                <h3>Repositories</h3>
+                <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fijethmal%2Fleetcode-solutions%2Fblob%2Fmain%2FREADME.md&style=default&type=markdown&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+                <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fijethmal%2Fctf-writeups%2Fblob%2Fmain%2FREADME.md&style=default&type=markdown&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+                <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fijethmal%2Fbeepboop-discord-bot%2Fblob%2Fmaster%2FREADME.md&style=default&type=markdown&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+                <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fijethmal%2Flacework-scripts-python%2Fblob%2Fmaster%2FREADME.md&style=default&type=markdown&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+                <p></p>
+                <h3>Projects</h3>
+                <a href="https://king-prawn-app-ykahj.ondigitalocean.app/">A microsite I created for a forum project.</a>
+                <!--<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fijethmal%2Fprotect-sg-wildlife%2Fblob%2Fmain%2Fhome.html&style=default&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>-->
+            </section>
         </div>
 
-        <!--footer-->
-        <div class="row">
-            <div class="col-sm-12 row-no-gutters">
-                <footer>
-                    <p>Isha Jethmal, 2021.</p>
-                    <p>
-                        Icons made by <a target="_blank" href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-                        <br />Favicon from <a target="_blank" href="https://favicon.io/emoji-favicons/frog/">favicon.io</a>
-                        <br />Link hover animation from <a target="_blank" href="http://ianlunn.github.io/Hover/">Ian Lunn</a>
-                    </p>
-                </footer>
-            </div>
+        <div class="col-sm-8" id="onlineLinks" style="display:none">
+            <!--note: add more links-->
+                <a href="https://www.linkedin.com/in/isha-jethmal/" title="LinkedIn" target="_blank" class="fa fa-linkedin fa-3x"></a>
+                <a href="https://github.com/ijethmal" title="GitHub" target="_blank" class="fa fa-github fa-3x"></a>
         </div>
+
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <p class="m-0 text-center text-black">Isha Jethmal &copy; 2024
+            <br />Icons made by <a target="_blank" href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            <br />Favicon from <a target="_blank" href="https://favicon.io/emoji-favicons/frog/">favicon.io</a>
+            <br />Link hover animation from <a target="_blank" href="http://ianlunn.github.io/Hover/">Ian Lunn</a>
+        </p>
     </div>
 </body>
+
 </html>
